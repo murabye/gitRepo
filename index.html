@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/mainCSS.css" rel="stylesheet">
+    <title>HSE simulator</title>
+    <script src = "js/canvasRE.js"></script>
+</head>
+<body>
+
+<!-- Top fixed line -->
+<header>
+    <h1><a href="index.html">HSE</a></h1>
+    <h2><a href="index.html">simulator</a></h2>
+
+    <!-- This is a menu! -->
+    <div>
+        <form name="sound"  onsubmit="turnOff(); return false" id="sound">
+            <input type="image" src="images/speaker.png">
+        </form>
+        <a href="settings.html"><img src="images/settings.png"></a>
+        <a href="reference.html"><img src="images/info.png"></a>
+    </div>
+</header>
+
+<!-- form for login -->
+<article>
+    Введите ваше имя:
+    <form onsubmit="return false" name="login">
+        <input type="text" size="20" autofocus>
+        <input type="submit" name="login">
+    </form>
+</article>
+
+<!-- On login screen -->
+<article class="hid">
+    Привет, <span id="userName"></span> <br>
+
+    <form onsubmit="return false" name="preload">
+        <input type="button" value="Начать игру" name="startGame"><br>
+        <input type="button" value="Выход" name="logout">
+    </form>
+</article>
+
+<!-- In game screen -->
+<div id="game" class="hid">
+    <canvas width="800px" height="560px" id="canvas">Обновив браузер, вы спасаете котиков.</canvas>
+    <div class="panel"><div id="rate"></div><br>
+        <div id="rateLength"></div><br>
+        <div id="intelligence"></div><br>
+        <div id="charisma"></div><br>
+        <div id="helpFromGods"></div><br>
+        <div id="strengthOfGoogle"></div><br>
+        <div id="scienceLanguage"></div><br>
+    </div><div class="panel" style="left: 825px; width: 200px">
+     рейтинг,<br>
+    студентов на потоке,<br>
+    интеллект,<br>
+    харизма,<br>
+    помощь свыше,
+    <br>сила гугла,
+    <br>научный язык.
+    </div>
+
+    <div id="description" class="panel">Студенту свойственно ошибаться.</div>
+
+    <br>
+    <form onsubmit="return false" name="inGame">
+        <input type="button" value="Новая игра" name="newGame">
+        <input type="button" value="Выход" name="logout">
+    </form>
+    <div id="container"></div>
+</div>
+
+<!-- background -->
+<div id="back"><img src="images/main.png"></div>
+
+<div style="height: 0; overflow: hidden;"><img src="images/monsters/course.png" id="curs">
+    <img src="images/monsters/deadline.gif" id="deadline">
+    <img src="images/monsters/tusa.gif" id="laziness"> <br>
+
+    <img src="images/loot/cutezh.gif" id="tusa">
+    <img src="images/loot/night.gif" id="night">
+    <img src="images/loot/return.gif" id="return">
+    <img src="images/loot/session.gif" id="session">
+    <img src="images/loot/smile.gif" id="smile">
+    <img src="images/loot/tnt.png" id="tnt">
+    <img src="images/loot/desease.png" id="desease"> <br>
+
+    <img src="images/cave.png" id="cave"><br>
+
+    <img src="images/student.gif" id="hero"><br>
+
+    <img src="images/wall.png" id="wall">
+    <img src="images/floor.gif" id="floor">
+    <img src="images/invisibleFloor.gif" id="invisibleFloor">
+    <img src="images/invisibleWall.gif" id="invisibleWall">
+
+    <audio id="myPlayer" autoplay="autoplay" loop>
+        <source src="music/sound.mp3">
+    </audio>
+
+</div>
+
+<!-- the library first, next work with page, and next is game -->
+<script type="text/javascript" src="bower_components/pathfinder/pathfinding-browser.min.js"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+<script src="js/autorization.js"></script>
+<script src = "js/canv.js"></script>
+</body>
+</html>
