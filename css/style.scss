@@ -1,0 +1,23 @@
+@import "customVariables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "custom";
+
+.inventory {
+  background-color: $gray-lighter;
+  padding: $cell-padding $cell-padding 0 $cell-padding;
+  border-radius: $cell-border-radius;
+  border: $cell-border-width $gray-light dashed;
+
+  div {
+    div {
+      div {
+        background-color: $body-bg;
+        height: $cell-height;
+        margin-bottom: $cell-padding;
+        border-radius: $cell-border-radius;
+        border: $cell-border-width $gray-light dashed;
+      }
+    }
+  }
+}
