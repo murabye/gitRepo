@@ -4,17 +4,22 @@
 @import "custom";
 
 .inventory {
-  background-color: $gray-lighter;
   padding: $cell-padding $cell-padding 0 $cell-padding;
+
+  background-color: $gray-lighter;
   border-radius: $cell-border-radius;
   border: $cell-border-width $gray-light dashed;
 
   div {
     div {
       div {
-        background-color: $body-bg;
         height: $cell-height;
         margin-bottom: $cell-padding;
+
+        line-height: $cell-height;
+        text-align: center;
+
+        background-color: $body-bg;
         border-radius: $cell-border-radius;
         border: $cell-border-width $gray-light dashed;
       }
