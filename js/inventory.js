@@ -1,5 +1,6 @@
-'use strict';
+const lists = document.querySelectorAll(".cell");
 
-document.addEventListener("DOMContentLoaded", function () {
-    dragula($('cell'));
-});
+for (var i = 0; i < lists.length; i++) {
+    new MyDragZone(lists[i]);
+    new MyDropTarget(lists[i]);
+}
