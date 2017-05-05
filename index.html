@@ -8,8 +8,6 @@
 
     <!-- bootstrap + main style -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- dragula -->
-    <link href="node_modules/dragula/dist/dragula.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,91 +35,53 @@
 
 
     <div class="inventory">
-        <div class="row">
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"><img src="images/lost-items.png"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 hidden-sm">
-                <div class="cell"></div>
-            </div>
+        <!-- первый лист -->
+        <button class="arrow left"> <img src="images/left.png"> </button>
+        <div class="list">
+            <div class="row">
+                <div class="col-md-4 col-sm-5 cell">
+                    <img src="images/lost-items.png">
+                </div>
+                <div class="col-md-4 col-sm-5 cell">
+                </div>
+                <div class="col-md-4 col-sm-5 cell">
+                </div>
+                <div class="col-md-4 col-sm-5 cell">
+                </div>
+                <div class="col-md-4 hidden-sm cell">
+                </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"><img src="images/shopping-basket.png"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 hidden-sm">
-                <div class="cell"></div>
-            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-5 cell">
+                    <img src="images/shopping-basket.png">
+                </div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 hidden-sm cell"></div>
         </div>
-
-        <div class="row">
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 hidden-sm">
-                <div class="cell"></div>
-            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 hidden-sm cell"></div>
         </div>
-
-        <div class="row">
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="col-md-4 hidden-sm">
-                <div class="cell"></div>
-            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 col-sm-5 cell"></div>
+                <div class="col-md-4 hidden-sm cell"></div>
         </div>
-        <div class="row">
-            <div class="hidden-md hidden-lg col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="hidden-md hidden-lg col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="hidden-md hidden-lg col-sm-5">
-                <div class="cell"></div>
-            </div>
-            <div class="hidden-md hidden-lg col-sm-5">
-                <div class="cell"></div>
-            </div>
+            <div class="row">
+                <div class="hidden-md hidden-lg col-sm-5 cell"></div>
+                <div class="hidden-md hidden-lg col-sm-5 cell"></div>
+                <div class="hidden-md hidden-lg col-sm-5 cell"></div>
+                <div class="hidden-md hidden-lg col-sm-5 cell"></div>
         </div>
+        </div>
+        <button class="arrow right"> <img src="images/right.png"> </button>
     </div>
 
     <article>
@@ -140,10 +100,6 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-<!-- RequireJS Library  -->
-<!-- data-main attribute tells require.js to load
-     scripts/main.js after require.js loads. -->
-<script data-main="js/main" src="node_modules/requirejs/require.js"></script>
 
 <!-- inventory -->
 

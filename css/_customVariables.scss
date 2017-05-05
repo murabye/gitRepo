@@ -1,4 +1,4 @@
-//** Number of columns in the grid.
+// Number of columns in the grid.
 // default 12
 $grid-columns: 20 !default;
 
@@ -7,3 +7,6 @@ $cell-height: 100px;
 $cell-padding: 10px;
 $cell-border-radius: 10px;
 $cell-border-width: 1px;
+
+// arrow
+$arrow-width: 40px;

@@ -6,23 +6,39 @@
 .inventory {
   padding: $cell-padding $cell-padding 0 $cell-padding;
 
+  position: relative;
+
   background-color: $gray-lighter;
   border-radius: $cell-border-radius;
+  border: $cell-border-width $gray-light solid;
+}
+
+.cell {
+  height: $cell-height;
+  width: 18% !important;
+  margin: 0 1% $cell-padding 1%;
+
+  line-height: $cell-height;
+  text-align: center;
+
+  background-color: $body-bg;
+  border-radius: $cell-border-radius;
   border: $cell-border-width $gray-light dashed;
+}
 
-  div {
-    div {
-      div {
-        height: $cell-height;
-        margin-bottom: $cell-padding;
+.arrow {
+  position: absolute;
 
-        line-height: $cell-height;
-        text-align: center;
-
-        background-color: $body-bg;
-        border-radius: $cell-border-radius;
-        border: $cell-border-width $gray-light dashed;
-      }
-    }
+  img {
+    width: $arrow-width;
   }
+}
+
+.left {
+  left: -$arrow-width;
+
+}
+
+.right {
+  left: $arrow-width;
 }
