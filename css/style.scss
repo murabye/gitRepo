@@ -4,13 +4,18 @@
 @import "custom";
 
 .inventory {
-  padding: $cell-padding $cell-padding 0 $cell-padding;
+  padding: $cell-padding $cell-padding $carousel-control-font-size $cell-padding;
 
   position: relative;
 
   background-color: $gray-lighter;
   border-radius: $cell-border-radius;
   border: $cell-border-width $gray-light solid;
+
+  .row {
+    margin-left: -$cell-padding;
+    margin-right: -$cell-padding;
+  }
 }
 .cell {
   height: $cell-height;
@@ -24,38 +29,7 @@
   border-radius: $cell-border-radius;
   border: $cell-border-width $gray-light dashed;
 }
-.arrow {
-  position: absolute;
 
-  background: transparent;
-  border: none;
-
-  img {
-    width: $arrow-width;
-  }
+.carousel-indicators {
+  bottom: -$cell-padding/2;
 }
-
-.left {
-  left: -$arrow-width * 1.5;
-  top: 2 * $cell-height + $cell-border-width*4;
-  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    top: 2.5 * $cell-height + $cell-border-width*4;
-  }
-}
-
-.right {
-  left: $container-sm;
-  bottom: 2 * $cell-height + $cell-border-width*4;
-  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    bottom: 2.5 * $cell-height + $cell-border-width*4;
-  }
-
-  @media (min-width: $screen-md-min) {
-    left: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    left: $container-lg;
-  }
-
-}
-
