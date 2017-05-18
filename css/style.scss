@@ -33,3 +33,15 @@
 .carousel-indicators {
   bottom: -$cell-padding/2;
 }
+
+.list .glyphicon {
+  font-size: $points-height;
+  line-height: $cell-height;
+}
+
+.carousel-control {
+  left: -$cell-padding*2;
+  &.right {
+    right: -$cell-padding*2;
+  }
+}
