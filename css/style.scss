@@ -3,6 +3,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 @import "custom";
 
+// стили внутренние
 .inventory {
   padding: $cell-padding $cell-padding $carousel-control-font-size $cell-padding;
 
@@ -30,15 +31,14 @@
   border: $cell-border-width $gray-light dashed;
 }
 
+// стили для карусели
 .carousel-indicators {
   bottom: -$cell-padding/2;
 }
-
 .list .glyphicon {
   font-size: $points-height;
   line-height: $cell-height;
 }
-
 .carousel-control {
   left: -$cell-padding*2;
   &.right {
