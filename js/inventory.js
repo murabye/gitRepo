@@ -1,5 +1,17 @@
 "use strict";
+var sortable = [];
 
+document.addEventListener("DOMContentLoaded", function () {
+    var collection = document.querySelectorAll(".cell");
+
+    collection.forEach(function (item, i, arr) {
+        Sortable.create(item, {
+            group: "inventory",
+            animation: 150,
+            dragClass: "sortable-drag"
+        });
+    })
+});
 
 function addList(container) {
     for (var i = 0; i < 4; i++) {
