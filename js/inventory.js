@@ -1,17 +1,37 @@
 "use strict";
-var sortable = [];
+// анимация на отмену переноса
 
 document.addEventListener("DOMContentLoaded", function () {
     var collection = document.querySelectorAll(".cell");
 
     collection.forEach(function (item, i, arr) {
         Sortable.create(item, {
-            group: "inventory",
+            group: {
+                name: "inventory",
+                pull: true,
+                put: true
+            },
+            sort: false,
+            revertClone: true,
             animation: 150,
-            dragClass: "sortable-drag"
-        });
+            dragClass: "sortable-drag",
+
+
+            onAdd: function (evt) {
+             var itemEl = evt.item;  // dragged HTMLElement
+
+             if (itemEl.parentNode.childNodes.length > 1)
+             {
+                 evt.from.appendChild(itemEl);
+
+                 return false;
+             }
+            }
+        })
     })
 });
+
+
 
 function addList(container) {
     for (var i = 0; i < 4; i++) {
