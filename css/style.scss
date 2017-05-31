@@ -6,12 +6,11 @@
 // стили внутренние
 .inventory {
   padding: $cell-padding $cell-padding $carousel-control-font-size $cell-padding;
-
   position: relative;
 
   background-color: $gray-lighter;
   border-radius: $cell-border-radius;
-  border: $cell-border-width $gray-light solid;
+  border: 4*$cell-border-width $gray-light solid;
 
   .row {
     margin-left: -$cell-padding;
@@ -40,12 +39,14 @@
   line-height: $cell-height;
 }
 .carousel-control {
-  left: -$cell-padding*2;
+  width: 30px;
+  background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0));
   &.right {
-    right: -$cell-padding*2;
+    background: linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,0));
   }
 }
 
-.sortable-drag {
-  opacity: 0;
+.sortable-fallback span{
+  width: 100%;
+  height: 100%;
 }

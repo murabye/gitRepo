@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "sortable": "^0.8.0"
+ "jquery-ui": "jqueryui#^1.12.1"
   }
 }
