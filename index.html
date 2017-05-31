@@ -10,6 +10,10 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/sortable-theme-bootstrap.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]-->
@@ -35,16 +39,8 @@
     </article>
 
 
-    <div id="carousel" class="carousel slide inventory" data-ride="carousel" data-interval="false">
-        <!-- Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active list">
+    <div id="carousel" class="inventory">
+            <div class="list">
                     <div class="row">
                         <div class="col-md-4 col-sm-5 cell">
                             <span class="glyphicon glyphicon-folder-open"></span>
@@ -86,7 +82,7 @@
                         <div class="hidden-md hidden-lg col-sm-5 cell"></div>
                     </div>
             </div>
-            <div class="item list">
+            <div class="list">
                     <div class="row">
                         <div class="col-md-4 col-sm-5 cell">
                             <div><span class="glyphicon glyphicon-folder-open"></span></div>
@@ -124,14 +120,6 @@
                         <div class="hidden-md hidden-lg col-sm-5 cell"></div>
                     </div>
             </div>
-        </div>
-
-        <a class="left carousel-control" href="#carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
     </div>
 
     <article>
@@ -152,7 +140,7 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jCarousel.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <!-- inventory -->
 <script src="js/suuuuqa.js"></script>
